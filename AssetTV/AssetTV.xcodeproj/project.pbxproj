@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51333EFE1DEE1A2500B60B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333EFD1DEE1A2500B60B6A /* AppDelegate.swift */; };
-		51333F001DEE1A2500B60B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333EFF1DEE1A2500B60B6A /* ViewController.swift */; };
-		51333F031DEE1A2500B60B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51333F011DEE1A2500B60B6A /* Main.storyboard */; };
-		51333F061DEE1A2500B60B6A /* AssetTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51333F041DEE1A2500B60B6A /* AssetTV.xcdatamodeld */; };
-		51333F081DEE1A2500B60B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51333F071DEE1A2500B60B6A /* Assets.xcassets */; };
-		51333F0B1DEE1A2500B60B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51333F091DEE1A2500B60B6A /* LaunchScreen.storyboard */; };
 		51333F161DEE1A2500B60B6A /* AssetTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F151DEE1A2500B60B6A /* AssetTVTests.swift */; };
 		51333F211DEE1A2500B60B6A /* AssetTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F201DEE1A2500B60B6A /* AssetTVUITests.swift */; };
+		51333F391DEE1AE600B60B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F2F1DEE1AE600B60B6A /* AppDelegate.swift */; };
+		51333F3A1DEE1AE600B60B6A /* AssetTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51333F301DEE1AE600B60B6A /* AssetTV.xcdatamodeld */; };
+		51333F3B1DEE1AE600B60B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51333F331DEE1AE600B60B6A /* Assets.xcassets */; };
+		51333F3C1DEE1AE600B60B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51333F341DEE1AE600B60B6A /* LaunchScreen.storyboard */; };
+		51333F3D1DEE1AE600B60B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51333F361DEE1AE600B60B6A /* Main.storyboard */; };
+		51333F3E1DEE1AE600B60B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F381DEE1AE600B60B6A /* ViewController.swift */; };
+		51333F421DEE2F6400B60B6A /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 51333F411DEE2F6400B60B6A /* feed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,6 @@
 
 /* Begin PBXFileReference section */
 		51333EFA1DEE1A2500B60B6A /* AssetTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		51333EFD1DEE1A2500B60B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51333EFF1DEE1A2500B60B6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		51333F021DEE1A2500B60B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		51333F051DEE1A2500B60B6A /* AssetTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssetTV.xcdatamodel; sourceTree = "<group>"; };
-		51333F071DEE1A2500B60B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51333F0A1DEE1A2500B60B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51333F0C1DEE1A2500B60B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51333F111DEE1A2500B60B6A /* AssetTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssetTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51333F151DEE1A2500B60B6A /* AssetTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTVTests.swift; sourceTree = "<group>"; };
@@ -49,6 +44,13 @@
 		51333F1C1DEE1A2500B60B6A /* AssetTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssetTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51333F201DEE1A2500B60B6A /* AssetTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTVUITests.swift; sourceTree = "<group>"; };
 		51333F221DEE1A2500B60B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51333F2F1DEE1AE600B60B6A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51333F311DEE1AE600B60B6A /* AssetTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssetTV.xcdatamodel; sourceTree = "<group>"; };
+		51333F331DEE1AE600B60B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51333F351DEE1AE600B60B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		51333F371DEE1AE600B60B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51333F381DEE1AE600B60B6A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51333F411DEE2F6400B60B6A /* feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		51333EFC1DEE1A2500B60B6A /* AssetTV */ = {
 			isa = PBXGroup;
 			children = (
-				51333EFD1DEE1A2500B60B6A /* AppDelegate.swift */,
-				51333EFF1DEE1A2500B60B6A /* ViewController.swift */,
-				51333F011DEE1A2500B60B6A /* Main.storyboard */,
-				51333F071DEE1A2500B60B6A /* Assets.xcassets */,
-				51333F091DEE1A2500B60B6A /* LaunchScreen.storyboard */,
+				51333F2E1DEE1AE600B60B6A /* Core */,
+				51333F321DEE1AE600B60B6A /* UI */,
 				51333F0C1DEE1A2500B60B6A /* Info.plist */,
-				51333F041DEE1A2500B60B6A /* AssetTV.xcdatamodeld */,
 			);
 			path = AssetTV;
 			sourceTree = "<group>";
@@ -115,6 +113,7 @@
 			children = (
 				51333F151DEE1A2500B60B6A /* AssetTVTests.swift */,
 				51333F171DEE1A2500B60B6A /* Info.plist */,
+				51333F411DEE2F6400B60B6A /* feed.json */,
 			);
 			path = AssetTVTests;
 			sourceTree = "<group>";
@@ -126,6 +125,26 @@
 				51333F221DEE1A2500B60B6A /* Info.plist */,
 			);
 			path = AssetTVUITests;
+			sourceTree = "<group>";
+		};
+		51333F2E1DEE1AE600B60B6A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				51333F2F1DEE1AE600B60B6A /* AppDelegate.swift */,
+				51333F301DEE1AE600B60B6A /* AssetTV.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		51333F321DEE1AE600B60B6A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				51333F331DEE1AE600B60B6A /* Assets.xcassets */,
+				51333F341DEE1AE600B60B6A /* LaunchScreen.storyboard */,
+				51333F361DEE1AE600B60B6A /* Main.storyboard */,
+				51333F381DEE1AE600B60B6A /* ViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51333F0B1DEE1A2500B60B6A /* LaunchScreen.storyboard in Resources */,
-				51333F081DEE1A2500B60B6A /* Assets.xcassets in Resources */,
-				51333F031DEE1A2500B60B6A /* Main.storyboard in Resources */,
+				51333F3D1DEE1AE600B60B6A /* Main.storyboard in Resources */,
+				51333F3B1DEE1AE600B60B6A /* Assets.xcassets in Resources */,
+				51333F3C1DEE1AE600B60B6A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51333F421DEE2F6400B60B6A /* feed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51333F001DEE1A2500B60B6A /* ViewController.swift in Sources */,
-				51333EFE1DEE1A2500B60B6A /* AppDelegate.swift in Sources */,
-				51333F061DEE1A2500B60B6A /* AssetTV.xcdatamodeld in Sources */,
+				51333F3E1DEE1AE600B60B6A /* ViewController.swift in Sources */,
+				51333F3A1DEE1AE600B60B6A /* AssetTV.xcdatamodeld in Sources */,
+				51333F391DEE1AE600B60B6A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,20 +323,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		51333F011DEE1A2500B60B6A /* Main.storyboard */ = {
+		51333F341DEE1AE600B60B6A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				51333F021DEE1A2500B60B6A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		51333F091DEE1A2500B60B6A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				51333F0A1DEE1A2500B60B6A /* Base */,
+				51333F351DEE1AE600B60B6A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		51333F361DEE1AE600B60B6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51333F371DEE1AE600B60B6A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -538,12 +558,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		51333F041DEE1A2500B60B6A /* AssetTV.xcdatamodeld */ = {
+		51333F301DEE1AE600B60B6A /* AssetTV.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				51333F051DEE1A2500B60B6A /* AssetTV.xcdatamodel */,
+				51333F311DEE1AE600B60B6A /* AssetTV.xcdatamodel */,
 			);
-			currentVersion = 51333F051DEE1A2500B60B6A /* AssetTV.xcdatamodel */;
+			currentVersion = 51333F311DEE1AE600B60B6A /* AssetTV.xcdatamodel */;
 			path = AssetTV.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
