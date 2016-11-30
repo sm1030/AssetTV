@@ -1,0 +1,6 @@
+framework module Pods_AssetTVTests {
+  umbrella header "Pods-AssetTVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
