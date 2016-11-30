@@ -40,14 +40,22 @@ class TableViewController: UITableViewController, PresenterDelegate {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell
 
         if presenter.programs.count > indexPath.row {
-            let service = presenter.programs[indexPath.row]
-            cell.textLabel?.text = service.title
+            let program = presenter.programs[indexPath.row]
+            cell?.titleLabel.text = program.title
+            cell?.durationLabel.text = program.duration
+            
+            let image = presenter.getCachedImage(image_url: program.image_url ?? "")
+            if let imageData = image?.original {
+                cell?.imageView?.image = UIImage(data: imageData as Data)
+            } else {
+                cell?.imageView?.image = nil
+            }
         }
         
-        return cell
+        return cell!
     }
 
     /*

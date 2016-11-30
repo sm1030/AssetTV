@@ -26,7 +26,7 @@ class Presenter: ApiServiceDelegate {
         if api == nil {
             api = ApiService(delegate: self)
         }
-        
+
         api?.requestPrograms()
     }
     

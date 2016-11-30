@@ -10,6 +10,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var imageData: NSData?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
