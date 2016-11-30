@@ -7,7 +7,7 @@
     </entity>
     <entity name="Program" representedClassName="Program" syncable="YES" codeGenerationType="class">
         <attribute name="contact_details" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="data" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image_url" optional="YES" attributeType="String" syncable="YES"/>

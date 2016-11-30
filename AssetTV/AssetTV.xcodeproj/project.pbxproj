@@ -22,6 +22,7 @@
 		51333F4B1DEE427100B60B6A /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F4A1DEE427100B60B6A /* ImageTests.swift */; };
 		51333F4D1DEE428400B60B6A /* ProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F4C1DEE428400B60B6A /* ProgramTests.swift */; };
 		51333F4F1DEE4EB300B60B6A /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F4E1DEE4EB300B60B6A /* TestHelper.swift */; };
+		51333F501DEE6A2F00B60B6A /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 51333F411DEE2F6400B60B6A /* feed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51333F3D1DEE1AE600B60B6A /* Main.storyboard in Resources */,
+				51333F501DEE6A2F00B60B6A /* feed.json in Resources */,
 				51333F3B1DEE1AE600B60B6A /* Assets.xcassets in Resources */,
 				51333F3C1DEE1AE600B60B6A /* LaunchScreen.storyboard in Resources */,
 			);
