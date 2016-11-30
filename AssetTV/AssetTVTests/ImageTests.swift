@@ -26,7 +26,7 @@ class ImageTests: XCTestCase {
         var splashData: Data? = nil
         
         // Make sure there is no images
-        XCTAssertEqual(Image.getAllImages().count, 0)
+        XCTAssertEqual(Image.getAll()?.count, 0)
         
         // Save logo
         if let image = UIImage(named: "logo.png") {
@@ -37,7 +37,7 @@ class ImageTests: XCTestCase {
         }
         
         // Should be 1 image
-        XCTAssertEqual(Image.getAllImages().count, 1)
+        XCTAssertEqual(Image.getAll()?.count, 1)
         
         // Save splash
         if let image = UIImage(named: "splash") {
@@ -48,17 +48,19 @@ class ImageTests: XCTestCase {
         }
         
         // Should be 2 images
-        XCTAssertEqual(Image.getAllImages().count, 2)
+        XCTAssertEqual(Image.getAll()?.count, 2)
         
         //Check results
-        XCTAssertEqual(Image.getImageWIthURL(url: "logo"), logoData)
-        XCTAssertEqual(Image.getImageWIthURL(url: "splash"), splashData)
+        let logoImage = Image.getImage(url: "logo")
+        let splashImage = Image.getImage(url: "splash")
+        XCTAssertEqual(logoImage?.original as Data?, logoData)
+        XCTAssertEqual(splashImage?.original as Data?, splashData)
         
         // Should be 2 images
         Image.deleteAll()
         
         // Should be 0 images
-        XCTAssertEqual(Image.getAllImages().count, 0)
+        XCTAssertEqual(Image.getAll()?.count, 0)
     }
     
 }
