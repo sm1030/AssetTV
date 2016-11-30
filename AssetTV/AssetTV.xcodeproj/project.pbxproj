@@ -24,6 +24,7 @@
 		51333F4D1DEE428400B60B6A /* ProgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F4C1DEE428400B60B6A /* ProgramTests.swift */; };
 		51333F4F1DEE4EB300B60B6A /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F4E1DEE4EB300B60B6A /* TestHelper.swift */; };
 		51333F501DEE6A2F00B60B6A /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 51333F411DEE2F6400B60B6A /* feed.json */; };
+		51333F521DEE77E500B60B6A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51333F511DEE77E500B60B6A /* ApiService.swift */; };
 		CD6C08524AF977382640EEDB /* Pods_AssetTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B347B5F1670D1E92AE1061 /* Pods_AssetTVUITests.framework */; };
 		CFFBCBD0C6D0485FDF430EED /* Pods_AssetTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33536C181BF33100DEF49CBD /* Pods_AssetTVTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		51333F4A1DEE427100B60B6A /* ImageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		51333F4C1DEE428400B60B6A /* ProgramTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramTests.swift; sourceTree = "<group>"; };
 		51333F4E1DEE4EB300B60B6A /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		51333F511DEE77E500B60B6A /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		552B59B7F90DA306D5CB7C83 /* Pods-AssetTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssetTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssetTVTests/Pods-AssetTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57B1531AD8C67CB397CA4CF3 /* Pods-AssetTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssetTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssetTV/Pods-AssetTV.debug.xcconfig"; sourceTree = "<group>"; };
 		58B347B5F1670D1E92AE1061 /* Pods_AssetTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssetTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +168,7 @@
 				51333F431DEE3A7600B60B6A /* CoreData */,
 				51333F2F1DEE1AE600B60B6A /* AppDelegate.swift */,
 				51333F301DEE1AE600B60B6A /* AssetTV.xcdatamodeld */,
+				51333F511DEE77E500B60B6A /* ApiService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				51333F3A1DEE1AE600B60B6A /* AssetTV.xcdatamodeld in Sources */,
 				51333F471DEE3EDD00B60B6A /* Image+Methods.swift in Sources */,
 				51333F391DEE1AE600B60B6A /* AppDelegate.swift in Sources */,
+				51333F521DEE77E500B60B6A /* ApiService.swift in Sources */,
 				51333F451DEE3B3E00B60B6A /* Program+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -765,6 +769,7 @@
 				51333F271DEE1A2500B60B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51333F281DEE1A2500B60B6A /* Build configuration list for PBXNativeTarget "AssetTVTests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +778,7 @@
 				51333F2A1DEE1A2500B60B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51333F2B1DEE1A2500B60B6A /* Build configuration list for PBXNativeTarget "AssetTVUITests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +787,7 @@
 				51333F2D1DEE1A2500B60B6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
