@@ -27,5 +27,32 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    internal var aspectConstraint: NSLayoutConstraint? {
+        didSet {
+            if oldValue != nil && aspectConstraint != nil {
+                thumbnailImageView.removeConstraint(aspectConstraint!)
+            }
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        aspectConstraint = nil
+    }
+    
+    func setPostedImage(image: UIImage?) {
+        if image != nil {
+            let aspect = image!.size.width / image!.size.height
+            aspectConstraint = NSLayoutConstraint(item: thumbnailImageView,
+                                                  attribute: .width,
+                                                  relatedBy: .equal,
+                                                  toItem: thumbnailImageView,
+                                                  attribute: .height,
+                                                  multiplier: aspect,
+                                                  constant: 0.0)
+        }
+        thumbnailImageView.image = image
+    }
 
 }

@@ -49,9 +49,9 @@ class TableViewController: UITableViewController, PresenterDelegate {
             
             let image = presenter.getCachedImage(image_url: program.image_url ?? "")
             if let imageData = image?.original {
-                cell?.imageView?.image = UIImage(data: imageData as Data)
+                cell?.setPostedImage(image: UIImage(data: imageData as Data)!)
             } else {
-                cell?.imageView?.image = nil
+                cell?.setPostedImage(image: UIImage(named: "logo"))
             }
         }
         
