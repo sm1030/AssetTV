@@ -19,7 +19,8 @@ class Presenter: ApiServiceDelegate {
     
     weak var delegate: PresenterDelegate?
     var api: ApiService?
-    var lastTitleFilter = ".."
+    var titleFilter = ""
+    var programs = [Program]()
     
     func pullUpdates() {
         if api == nil {
@@ -29,17 +30,18 @@ class Presenter: ApiServiceDelegate {
         api?.requestPrograms()
     }
     
-    func apiServiceDataReceived() {
+    func apiServiceProgramDataReceived() {
+        programs = Program.getFilteredItems(byTitle: titleFilter) ?? [Program]()
         delegate?.presenterDataUpdated()
     }
     
-    func getFilteredPrograms(title: String) -> [Program] {
-        let programs = Program.getFilteredItems(byTitle: title)
-        if lastTitleFilter != title {
-            lastTitleFilter = title
-            delegate?.presenterDataUpdated()
-        }
-        return programs ?? [Program]()
+    func apiServiceDataImageReceived() {
+        delegate?.presenterDataUpdated()
+    }
+    
+    func applyNewTitleFilter(newTitleFilter: String) {
+        titleFilter = newTitleFilter
+        apiServiceProgramDataReceived()
     }
 
     func getCachedImage(image_url: String) -> Image? {

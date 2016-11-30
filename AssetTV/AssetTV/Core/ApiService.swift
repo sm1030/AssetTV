@@ -10,7 +10,8 @@ import Foundation
 import Alamofire
 
 protocol ApiServiceDelegate: class {
-    func apiServiceDataReceived()
+    func apiServiceProgramDataReceived()
+    func apiServiceDataImageReceived()
 }
 
 class ApiService {
@@ -37,7 +38,7 @@ class ApiService {
                 DataController.saveContext()
                 
                 // Notify delegate
-                self.delegate?.apiServiceDataReceived()
+                self.delegate?.apiServiceProgramDataReceived()
             }
         }
     }
@@ -47,7 +48,7 @@ class ApiService {
             Alamofire.request(image_url!).responseData(completionHandler: { (dataResponse: DataResponse<Data>) in
                 if dataResponse.data != nil {
                     Image.saveImage(url: image_url!, data: dataResponse.data!)
-                    self.delegate?.apiServiceDataReceived()
+                    self.delegate?.apiServiceDataImageReceived()
                 }
             })
         }
